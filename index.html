@@ -1,0 +1,32 @@
+<html>
+    <head>
+      <title>Order Tree</title>
+      <script src="js/external/jquery.min.js"></script>
+      <script src="js/external/d3.js"></script>
+      <script src="js/external/d3.layout.js"></script>
+    </head>
+    <body>
+        <div id="orderflowgraph" class="ordergraphview">
+         <link rel="stylesheet" type="text/css" href="css/graph.css">
+        <div class="graph_legend">
+          <table>
+            <tr> <td>  <div class="edge-1"></div> </td>        <td>  < 2 hrs </td>    </tr>
+            <tr> <td>  <div class="edge-2"></div> </td>        <td>  < 5 hrs </td>    </tr>
+            <tr> <td>  <div class="edge-3"></div> </td>        <td>  < 10 hrs </td>    </tr>
+            <tr> <td>  <div class="edge-4"></div> </td>        <td>  < 10+ hrs </td>    </tr>
+          </table>
+        </div>
+        <div class="info-float"></div>
+        <script src="js/plotter.js"></script>
+        <script type="text/javascript">
+             $.getJSON("document.json", function(data) {
+		 var root = '';
+		root.x0 = h / 2;
+                root.y0 = 0;
+                update(data);
+	 });
+        </script>
+     </div>
+  </body>
+</html>
+
