@@ -8,13 +8,11 @@
                     "timestamp": 1375826913,
                     "children": [
                         {
-                            "payload": "{\"requirement_id\":\"req_id_a_1-5\",\"company\":\"b2c\",\"mapping_id\":\"map_id_a_1-5\",\"source\":\"proc\",\"attributes\":{\"quantity\":\"5\"},\"event_date\":\"2013-08-07 03:50:33.347688\",\"event\":\"requirement_created\",\"state\":\"requirement_created\",\"order_item_id\":\"id_a_1-5\"}",
                             "children": [
                                 {
                                     "timestamp": 1375894233,
                                     "children": [
                                         {
-                                            "payload": "{\"entity_id\":\"sel_id_a_1-5\",\"company\":\"b2b\",\"po_item_id\":\"po_id_a_1-5\",\"source\":\"oms\",\"attributes\":{\"sku\":\"SKU0000000000000\",\"listing_id\":\"LSTCAMCVYDJFGDFZJAGAWMNYG\",\"list_price\":29950.0,\"product_id\":\"CAMCVYDJFGDFZJAG\",\"order_item_sub_type_id\":\"null\",\"order_id\":492,\"external_order_id\":\"OD314051710000\",\"unit_status_map\":{\"cancelled\":1},\"order_item_type\":\"physical\",\"shipping_address_id\":\"ADD13425909137739887\",\"selling_price\":29950.0,\"order_date\":\"2013-05-14T17:10:52+05:30\",\"unit_status_map_diff\":{\"cancelled\":1,\"on_hold\":-1},\"category_id\":20056,\"quantity\":\"5\"},\"event_date\":\"2013-08-07 19:38:33.347688\",\"event\":\"order_item_approved\",\"state\":\"oms_approved\",\"order_item_id\":\"sel_id_a_1-5\"}",
                                             "timestamp": 1375904313,
                                             "children": [
                                                 {
