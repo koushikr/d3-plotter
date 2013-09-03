@@ -45,19 +45,19 @@ function update(source) {
         .attr("width", node_width.toString())
         .attr("rx","3")
         .attr("ry","3")
-        .style("fill", function(d) { return node_color(d.company,d.state) })
+        .style("fill", function(d) { return node_color() })
 
     nodeEnter.append("svg:text")
         .attr("x", 10)
         .attr("dy", "1.35em")
         .attr("text-anchor", "start")
-        .text(function(d) { return (d.company+"-"+ d.source ); })
+        .text( "Sample Node" )
 
     nodeEnter.append("svg:text")
         .attr("x", 10)
         .attr("dy", "2.35em")
         .attr("text-anchor", "start")
-        .text(function(d) { return (d.state ); })
+        .text("Sample Node")
 
 
 
@@ -159,7 +159,7 @@ function color_code_graph(from_date,to_date){
 function show_data(node_data){
     $(".node").mousemove(function(e){
 
-        var obj= jQuery.parseJSON( node_data.payload );
+        var obj= node_data.payload;
         var info_json = JSON.stringify(obj,1,2).replace(/"/g, "")
 
         $(".info-float").html("<pre>" + info_json+ "</pre>")
@@ -183,19 +183,8 @@ function format_info_float(mouseX,mouseY){
         top: mouseY +25
     });
 }
-function node_color(company,state){
-    if(company == 'b2c'){
-        if(state.indexOf("cancelled")!=-1)          return "#f00"
-        else if(state.indexOf("hold")!=-1)          return "#a07"
-        else if(state.indexOf("res_created")!=-1)   return "#0d0"
-        else                                        return "#55f"
-    }
-    else {
-        if(state.indexOf("cancelled")!=-1)          return "#b00"
-        else if(state.indexOf("hold")!=-1)          return "#a07"
-        else if(state.indexOf("res_created")!=-1)   return "#0a0"
-        else                                        return "#008"
-    }
+function node_color(){
+    return "#0a0";
 }
 
 

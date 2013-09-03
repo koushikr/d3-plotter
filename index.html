@@ -19,12 +19,11 @@
         <div class="info-float"></div>
         <script src="js/plotter.js"></script>
         <script type="text/javascript">
-             $.getJSON("document.json", function(data) {
-		 var root = '';
+		var root = '{"timestamp":1375822233,"payload" : {"key1":"value1", "key2":"value2"}, "children":[{"timestamp":1375826553,"payload" : {"key1":"value1", "key2":"value2"},"children":[{"timestamp":1375826913,"payload" : {"key1":"value1", "key2":"value2"},"children":[{"children":[{"timestamp":1375894233,"payload" : {"key1":"value1", "key2":"value2"},"children":[{"timestamp":1375904313,"payload" : {"key1":"value1", "key2":"value2"},"children":[{"timestamp":1375912953,"payload" : {"key1":"value1", "key2":"value2"},"children":[{"timestamp":1375923033, "payload" : {"key1":"value1", "key2":"value2"}},{"timestamp":1375928433, "payload" : {"key1":"value1", "key2":"value2"}}]}]}]}]}]},{"timestamp":1375840233,"payload" : {"key1":"value1", "key2":"value2"},"children":[{"timestamp":1375939233,"payload" : {"key1":"value1", "key2":"value2"},"children":[{"timestamp":1375939233,"payload" : {"key1":"value1", "key2":"value2"}}]}]},{"timestamp":1375887033,"payload" : {"key1":"value1", "key2":"value2"}}]},{"timestamp":1375842033,"payload" : {"key1":"value1", "key2":"value2"}}]}';
+		root = JSON.parse(root);
 		root.x0 = h / 2;
                 root.y0 = 0;
-                update(data);
-	 });
+                update(root);
         </script>
      </div>
   </body>
